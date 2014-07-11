@@ -1,6 +1,6 @@
 import sys
 import xbmcgui
-import sys xbmcplugin
+import xbmcplugin
 
 addon_handle = int(sys.argv[1])
 
