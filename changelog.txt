@@ -1,2 +1,0 @@
-v0.0.1
--Created the initial Add-on. More to follow
