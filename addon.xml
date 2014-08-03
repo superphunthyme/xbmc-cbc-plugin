@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.audio.cbc" name="CBC Online Radio" version="0.0.1~alpha" provider-name="superphunthyme">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.CBCRadio" name="CBC Online Radio" version="0.1.0" provider-name="superphunthyme">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.parsedom" version="0.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
+    <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">CBC Online Radio</summary>
-    <summary lang="fr">Radio en ligne</summary>
+    <summary lang="fr">Radio en ligne CBC</summary>
     <description lang="en">A Plugin to acces CBC online radio and music streaming</description>
+    <description lang="fr">Un Plugin pour acceder a la radio en ligne CBC et ses chaines de musique</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
-    <license>Pending. For now author reserves all rights to distribution and reproduction</license>
+    <license>Pending. For now author reserves all rights to distribution and reproduction, insofar as this is compatible with XBMC's terms. A more open license will replace this.</license>
     <forum></forum>
     <website></website>
     <email></email>
