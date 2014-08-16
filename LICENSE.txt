@@ -1,0 +1,6 @@
+For now, no restriction on use or modification except that:
+
+-1- You use this software at you own risk.
+-2- The only version of this software which I maintain is at https://github.com/superphunthyme/xbmc-cbc-plugin. All other copies are not mine
+
+This license is temporary. As soon as a new one is added to this addon at https://github.com/superphunthyme/xbmc-cbc-plugin, the newer version will apply, and this license will no longer be valid.
