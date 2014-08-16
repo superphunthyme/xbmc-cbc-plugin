@@ -14,7 +14,7 @@ def get_station_urls(category_titles):
         ret = common.parseDOM(station_list,"div",attrs = {"id":category_titles[i]})	
         ret2 = common.parseDOM(ret,"span",attrs = {"class":"streamUrl"})
         urls.append(common.parseDOM(ret2,"a",ret = "href"))
-        print urls[i]
+        #print urls[i]
 
 		#return listing
 		#Use ret to narrow in on "a" tag, first with h3, then li
@@ -27,7 +27,7 @@ def get_station_names(category_titles):
         #taking the block whose id matches the category
         ret = common.parseDOM(station_list,"div",attrs = {"id":category_titles[i]})
         station_names.append(common.parseDOM(ret,"a",attrs={"target":"_parent"}))
-        print station_names[i]
+        #print station_names[i]
     return station_names
     
 def get_categories():
@@ -43,7 +43,7 @@ def get_station_names_by_cat(category_name):
     station_names=(common.parseDOM(ret,"a",attrs={"target":"_parent"}))
     for i in range(0,len(station_names)):
         station_names[i] = station_names[i].encode("utf-8")
-    print station_names
+    #print station_names
     return station_names
     
 def get_station_url_by_station(station_name):
