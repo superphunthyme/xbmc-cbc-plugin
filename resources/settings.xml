@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <setting id="test_setting" type="int" default="0" label="Test Setting"/>
-    <setting id="region_setting" type="String" default="Ottawa" label="Region Settings">
+    <setting id="test_setting" type="int" default=0 label="Test Setting"/>
+    <setting id="region_setting" type="text" default="My_Region" label="Region Settings"/>
 </settings>
