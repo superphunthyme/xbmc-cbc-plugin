@@ -7,10 +7,9 @@ import xbmcplugin
 import xbmcaddon
 import re
 
+#Parsing html (stored locally)
 from resources.lib import CBCParse
 #Note, will need __init__.py
-#sys.path.append(os.path.join(_addon_path, 'resources', 'lib'))
-#import CBCParse
 # getting addon object
 my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
 #base url and handle of the addon
@@ -25,21 +24,6 @@ xbmcplugin.setContent(addon_handle, 'songs')
 def build_url(query):
     return base_url + '?' + urllib.urlencode(query)
     
-def createListing():
-    listing = []
-    listing.append(('Radio One Ottawa','http://playerservices.streamtheworld.com/pls/CBC_R1_OTT_H.pls','Talk'))
-    listing.append(('Radio Two Ottawa','http://2073.live.streamtheworld.com/CBC_R2_TOR_H','Music Radio'))
-    return listing
-    #listing.append("")
-    
-def populateDirectory(listing):
-    for item in listing:
-        li = xbmcgui.ListItem(item[0],iconImage=my_addon.getAddonInfo('icon'))
-        li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-        #li.setInfo('music',{'genre':item[2]})
-        xbmcplugin.addDirectoryItem(handle=addon_handle,url=item[1],listitem=li)
-    xbmcplugin.endOfDirectory(addon_handle)    
-    
 mode = args.get('mode',None)
 
 if mode is None:
@@ -48,14 +32,15 @@ if mode is None:
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
-    url = build_url({'mode': 'folderFR', 'foldername': 'Folder Two'})
-    li = xbmcgui.ListItem('FR', iconImage='DefaultFolder.png')
-    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
+    #Plans to add a french directory, maybe for icaimusique.ca
+    #url = build_url({'mode': 'folderFR', 'foldername': 'Folder Two'})
+    #li = xbmcgui.ListItem('FR', iconImage='DefaultFolder.png')
+    #li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    #xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
     xbmcplugin.endOfDirectory(addon_handle)
 
-
+#Populates top-level directory with genre categories
 elif mode[0] == 'folderEN':
     foldername = args['foldername'][0]
     categories = CBCParse.get_categories()
@@ -66,9 +51,8 @@ elif mode[0] == 'folderEN':
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
     xbmcplugin.endOfDirectory(addon_handle)
-        #for station in station_names[i]
-        #li = xbmcgui.ListItem(station)
-        
+
+#Checks if the foldername is a category. If so, populates with all the stations in that category        
 elif args['foldername'][0] in CBCParse.get_categories():
     xbmc.log("Entering category " + mode[0])
     foldername = args['foldername'][0]
@@ -81,30 +65,3 @@ elif args['foldername'][0] in CBCParse.get_categories():
         li = xbmcgui.ListItem(station_names[i], iconImage='DefaultAudio.png')
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     xbmcplugin.endOfDirectory(addon_handle)
-
-
-#populateDirectory(createListing())
-
-#elif mode[0]=='folder_FR':
-#    foldername = args['foldername'][0]
-#    url = build_url({'mode': 'folder', 'foldername': 'CBC Radio Numbers'})
-#    li = xbmcgui.ListItem('CBC Radio Numbers', iconImage=my_addon.getAddonInfo('icon'))
-#    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-#    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-#    xbmcplugin.endOfDirectory(addon_handle)
-
-
-
-#elif mode[0] == 'folderEN':
-#    foldername = args['foldername'][0]
-#    listing = []
-#    listing.append(('Radio One Ottawa','http://playerservices.streamtheworld.com/pls/CBC_R1_OTT_H.pls','Talk'))
-#    listing.append(('Radio Two Ottawa','http://playerservices.streamtheworld.com/pls/CBC_R2_TOR_H.pls','Music Radio'))
-#    for item in listing:
-#        li = xbmcgui.ListItem(item[0])#iconImage=my_addon.getAddonInfo('icon'))
-#        li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-#        li.setInfo('music',{'genre':item[2]})
-#        xbmcplugin.addDirectoryItem(handle=addon_handle,url=item[1],listitem=li)
-#        
-#    xbmcplugin.endOfDirectory(addon_handle)
-
