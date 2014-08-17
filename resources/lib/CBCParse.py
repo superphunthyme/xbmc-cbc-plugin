@@ -1,5 +1,7 @@
-import CommonFunctions as common
 import os
+import CommonFunctions
+common = CommonFunctions
+common.plugin = "plugin.audio.CBCRadio-0.1.1"
 
 #getting data to store station info
 dir = os.path.dirname(__file__)
