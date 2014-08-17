@@ -7,6 +7,10 @@ import xbmcplugin
 import xbmcaddon
 import re
 
+import CommonFunctions
+common = CommonFunctions
+common.plugin = "plugin.audio.CBCRadio-0.1.1"
+
 #Parsing html (stored locally)
 from resources.lib import CBCParse
 #Note, will need __init__.py
