@@ -12,7 +12,7 @@ Installation should be like any other Kodi (XBMC) plugin.
 
 Check the [Kodi website](http://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_files) for an illustration.
 
-# Screenshots
+# Screenshot
 ![Screenshot of top level of station lists](http://imgur.com/pfmSiGVl.png "CBC Plugin Screenshot")
 
 # Testing
