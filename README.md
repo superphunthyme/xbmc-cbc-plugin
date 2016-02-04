@@ -1,6 +1,6 @@
 xbmc-cbc-plugin
 ===============
-Essentially, this is an xbmc plugin to listen to CBC radio stations online
+Essentially, this is an Kodi (formerly XBMC) plugin to listen to CBC radio stations online
 
 # Installation
 
@@ -17,6 +17,6 @@ Check the [Kodi website](http://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_f
 
 # Testing
 
-Tested as of version 15.2 of KODI.
+Tested as of version 15.2 of Kodi.
 
 The plugin works on this version; some stations have been removed/moved as they are no longer available.
