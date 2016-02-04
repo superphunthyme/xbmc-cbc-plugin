@@ -1,6 +1,17 @@
-For now, no restriction on use or modification except that:
+Copyright (c) <2016> <Isaac Gollish>
 
--1- You use this software at you own risk.
--2- The only version of this software which I maintain is at https://github.com/superphunthyme/xbmc-cbc-plugin. All other copies are not mine
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
 
-This license is temporary. As soon as a new one is added to this addon at https://github.com/superphunthyme/xbmc-cbc-plugin, the newer version will apply, and this license will no longer be valid.
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgement in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
