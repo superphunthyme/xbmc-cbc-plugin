@@ -15,5 +15,5 @@ Check the [Kodi website](http://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_f
 
 # Testing
 Tested as of version 15.2 of KODI.
-The plugin works fine, however some stations have been removed.
-They will be removed unless I can determine that they have simply moved.
+The plugin works on this version, however some stations have been removed/moved.
+As I am unable to find a way to access these stations, they will be removed.
