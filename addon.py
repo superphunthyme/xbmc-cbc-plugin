@@ -59,7 +59,7 @@ elif mode[0] == 'Radio2':
         url = CBCJsonParser.parse_pls(playlist_url)
         li = xbmcgui.ListItem(region, iconImage='DefaultFolder.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-        xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
+        xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     xbmcplugin.endOfDirectory(addon_handle)
 
 elif mode[0] == 'Radio3':
@@ -69,8 +69,7 @@ elif mode[0] == 'Sonica':
     pass
 
 # Create list items and URLs for Radio 1
-elif args['mode'][0] == 'r1_regions':
-    xbmc.log("Entering category " + mode[0])
+elif mode[0] == 'r1_regions':
     region = args['foldername'][0].decode('utf-8')
 
     aac_playlist_url, mp3_playlist_url = CBCJsonParser.get_R1_streams(region)

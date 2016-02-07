@@ -22,8 +22,8 @@ Args:
     region: The region served by Radio1
 Returns:
     A tuple contating:
-    first element, the high quality stream (AAC)
-    second element, the low quality stream (MP3)
+    first element, the .pls url to the high quality stream (AAC)
+    second element, the .pls url to the low quality stream (MP3)
 '''
 def get_R1_streams(region):
     data = json.load(open(DATA_DIR + 'radio1.json', 'r'))
@@ -31,6 +31,12 @@ def get_R1_streams(region):
         if station['region'] == region:
             return (station['high_quality_url'], station['low_quality_url'])
 
+'''
+Args:
+    region: The region served by Radio2
+Returns:
+    The url to the .pls file for region
+'''
 def get_R2_streams(region):
     data = json.load(open(DATA_DIR + 'radio2.json', 'r'))
     for station in data:
