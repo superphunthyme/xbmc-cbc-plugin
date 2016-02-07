@@ -39,7 +39,7 @@ if mode is None:
 
     xbmcplugin.endOfDirectory(addon_handle)
 
-# Populates top-level directory with region categories
+# Populates directory with region links for Radio 1
 elif mode[0] == 'Radio1':
     foldername = args['foldername'][0]
     regions = CBCJsonParser.get_regions('radio1')
@@ -50,12 +50,13 @@ elif mode[0] == 'Radio1':
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
     xbmcplugin.endOfDirectory(addon_handle)
 
-# Populates top-level directory with genre categories
+# Populates directory with region links for Radio 2
 elif mode[0] == 'Radio2':
     foldername = args['foldername'][0]
     regions = CBCJsonParser.get_regions('radio2')
     for region in regions:
-        url = build_url({'mode': 'r2_regions', 'foldername': region})
+        playlist_url = CBCJsonParser.get_R2_streams(region)
+        url = CBCJsonParser.parse_pls(playlist_url)
         li = xbmcgui.ListItem(region, iconImage='DefaultFolder.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
@@ -67,21 +68,19 @@ elif mode[0] == 'Radio3':
 elif mode[0] == 'Sonica':
     pass
 
-#Checks if the foldername is a category. If so, populates with all the stations in that category
+# Create list items and URLs for Radio 1
 elif args['mode'][0] == 'r1_regions':
     xbmc.log("Entering category " + mode[0])
-    region = args['foldername'][0]
+    region = args['foldername'][0].decode('utf-8')
 
     aac_playlist_url, mp3_playlist_url = CBCJsonParser.get_R1_streams(region)
     aac_stream_url = CBCJsonParser.parse_pls(aac_playlist_url)
     mp3_stream_url = CBCJsonParser.parse_pls(mp3_playlist_url)
 
-    aac_li = xbmcgui.ListItem('High Quality (AAC)', iconImage='DefaultAudio.png')
-    mp3_li = xbmcgui.ListItem('Low Quality (MP3)', iconImage='DefaultAudio.png')
+    aac_li = xbmcgui.ListItem(region + ' - High Quality (AAC)', iconImage='DefaultAudio.png')
+    mp3_li = xbmcgui.ListItem(region + ' - Low Quality (MP3)', iconImage='DefaultAudio.png')
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=aac_stream_url, listitem=aac_li)
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=mp3_stream_url, listitem=mp3_li)
     xbmcplugin.endOfDirectory(addon_handle)
 
 # TODO. Add Soncica and Radio 3
-# Get links working for Radio 2
-# We keep reusing CBCJsonParser.get_regions. Just call it once
