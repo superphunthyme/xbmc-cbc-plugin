@@ -23,7 +23,7 @@ xbmcplugin.setContent(addon_handle, 'songs')
 
 def build_url(query):
     return base_url + '?' + urllib.urlencode(query)
-    
+
 mode = args.get('mode',None)
 
 if mode is None:
@@ -44,7 +44,7 @@ elif mode[0] == 'Radio1':
     foldername = args['foldername'][0]
     regions = CBCJsonParser.get_regions('radio1')
     for region in regions:
-        url = build_url({'mode': "category", 'foldername': region})
+        url = build_url({'mode': 'r1_regions', 'foldername': region})
         li = xbmcgui.ListItem(region, iconImage='DefaultFolder.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
@@ -55,7 +55,7 @@ elif mode[0] == 'Radio2':
     foldername = args['foldername'][0]
     regions = CBCJsonParser.get_regions('radio2')
     for region in regions:
-        url = build_url({'mode': "category", 'foldername': region})
+        url = build_url({'mode': 'r2_regions', 'foldername': region})
         li = xbmcgui.ListItem(region, iconImage='DefaultFolder.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
@@ -68,11 +68,11 @@ elif mode[0] == 'Sonica':
     pass
 
 #Checks if the foldername is a category. If so, populates with all the stations in that category
-elif args['foldername'][0] in CBCJsonParser.get_regions('radio1'):
+elif args['mode'][0] == 'r1_regions':
     xbmc.log("Entering category " + mode[0])
-    foldername = args['foldername'][0]
+    region = args['foldername'][0]
 
-    aac_playlist_url, mp3_playlist_url = CBCJsonParser.get_R1_streams(args['foldername'][0])
+    aac_playlist_url, mp3_playlist_url = CBCJsonParser.get_R1_streams(region)
     aac_stream_url = CBCJsonParser.parse_pls(aac_playlist_url)
     mp3_stream_url = CBCJsonParser.parse_pls(mp3_playlist_url)
 
