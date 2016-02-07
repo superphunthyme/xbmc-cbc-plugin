@@ -26,10 +26,5 @@
     {
         "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_IET_H.pls", 
         "region": "Eastern (International)"
-    }, 
-    {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R3_WEB.pls", 
-        "region": "CBC Radio 3"
-    }, 
-    {}
+    } 
 ]
