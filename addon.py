@@ -26,7 +26,9 @@ def build_url(query):
 
 mode = args.get('mode',None)
 
+# Top-level menu
 if mode is None:
+
     url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
     li = xbmcgui.ListItem('Radio1', iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
@@ -36,6 +38,16 @@ if mode is None:
     li = xbmcgui.ListItem('Radio2', iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
+
+    url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_R3_WEB.pls')
+    li = xbmcgui.ListItem('Radio 3', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
+    url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_SONICA_H.pls')
+    li = xbmcgui.ListItem('Sonica', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
     xbmcplugin.endOfDirectory(addon_handle)
 
@@ -62,12 +74,6 @@ elif mode[0] == 'Radio2':
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     xbmcplugin.endOfDirectory(addon_handle)
 
-elif mode[0] == 'Radio3':
-    pass
-
-elif mode[0] == 'Sonica':
-    pass
-
 # Create list items and URLs for Radio 1
 elif mode[0] == 'r1_regions':
     region = args['foldername'][0].decode('utf-8')
@@ -81,5 +87,3 @@ elif mode[0] == 'r1_regions':
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=aac_stream_url, listitem=aac_li)
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=mp3_stream_url, listitem=mp3_li)
     xbmcplugin.endOfDirectory(addon_handle)
-
-# TODO. Add Soncica and Radio 3
