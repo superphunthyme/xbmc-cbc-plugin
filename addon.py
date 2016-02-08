@@ -19,6 +19,20 @@ args = urlparse.parse_qs(sys.argv[2][1:])
 for arg in args:
     xbmc.log(arg)
 
+# Get region setting for Radio 1
+my_r1_region = xbmcplugin.getSetting(addon_handle, '0')
+
+# Get region setting for Radio 2
+my_r2_region = xbmcplugin.getSetting(addon_handle, '1')
+
+# Get Quality setting
+my_quality = xbmcplugin.getSetting(addon_handle, '2')
+
+if my_quality == 'High (AAC)':
+    qual = 0
+else:
+    qual = 1
+
 xbmcplugin.setContent(addon_handle, 'songs')
 
 def build_url(query):
@@ -29,13 +43,23 @@ mode = args.get('mode',None)
 # Top-level menu
 if mode is None:
 
+    url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(my_r1_region)[qual])
+    li = xbmcgui.ListItem('Radio1 (' + my_r1_region + ')', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
+    url = CBCJsonParser.parse_pls(CBCJsonParser.get_R2_streams(my_r2_region))
+    li = xbmcgui.ListItem('Radio2 (' + my_r2_region + ')', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
     url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
-    li = xbmcgui.ListItem('Radio1', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio1 (all)', iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
     url = build_url({'mode': 'Radio2', 'foldername': 'Folder Two'})
-    li = xbmcgui.ListItem('Radio2', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio2 (all)', iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
