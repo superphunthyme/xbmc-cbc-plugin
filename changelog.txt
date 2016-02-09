@@ -27,3 +27,6 @@ v0.1.1
 
 v0.2
 - Removed unavailable channels
+
+v1.0
+- Can set region and quality via settings. All channels are available
