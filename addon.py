@@ -8,7 +8,7 @@ import xbmcaddon
 import re
 
 #Parsing html (stored locally)
-from resources.lib import CBCParse, CBCJsonParser
+from resources.lib import CBCJsonParser
 #Note, will need __init__.py
 # getting addon object
 my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
