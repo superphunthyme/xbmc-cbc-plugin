@@ -16,17 +16,20 @@ my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
 args = urlparse.parse_qs(sys.argv[2][1:])
-for arg in args:
-    xbmc.log(arg)
+
+# On first time launch, users can select their region, we use a String comparison (not boolean) since that is what getSetting returns
+if my_addon.getSetting('3') == 'true':
+    my_addon.openSettings()
+    my_addon.setSetting('3', 'false')
 
 # Get region setting for Radio 1
-my_r1_region = xbmcplugin.getSetting(addon_handle, '0')
+my_r1_region = my_addon.getSetting('0')
 
 # Get region setting for Radio 2
-my_r2_region = xbmcplugin.getSetting(addon_handle, '1')
+my_r2_region = my_addon.getSetting('1')
 
 # Get Quality setting
-my_quality = xbmcplugin.getSetting(addon_handle, '2')
+my_quality = my_addon.getSetting('2')
 
 if my_quality == 'High (AAC)':
     qual = 0
@@ -44,34 +47,34 @@ mode = args.get('mode',None)
 if mode is None:
 
     url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(my_r1_region)[qual])
-    li = xbmcgui.ListItem('Radio1 (' + my_r1_region + ')', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio 1 (' + my_r1_region + ')', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
     url = CBCJsonParser.parse_pls(CBCJsonParser.get_R2_streams(my_r2_region))
-    li = xbmcgui.ListItem('Radio2 (' + my_r2_region + ')', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio 2 (' + my_r2_region + ')', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
-    url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
-    li = xbmcgui.ListItem('Radio1 (all)', iconImage='DefaultFolder.png')
-    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
-
-    url = build_url({'mode': 'Radio2', 'foldername': 'Folder Two'})
-    li = xbmcgui.ListItem('Radio2 (all)', iconImage='DefaultFolder.png')
-    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
-
     url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_R3_WEB.pls')
-    li = xbmcgui.ListItem('Radio 3', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio 3', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
     url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_SONICA_H.pls')
-    li = xbmcgui.ListItem('Sonica', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Sonica', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
+    url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
+    li = xbmcgui.ListItem('Radio 1 (all)', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
+
+    url = build_url({'mode': 'Radio2', 'foldername': 'Folder Two'})
+    li = xbmcgui.ListItem('Radio 2 (all)', iconImage='DefaultFolder.png')
+    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
+    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
     xbmcplugin.endOfDirectory(addon_handle)
 
@@ -93,7 +96,7 @@ elif mode[0] == 'Radio2':
     for region in regions:
         playlist_url = CBCJsonParser.get_R2_streams(region)
         url = CBCJsonParser.parse_pls(playlist_url)
-        li = xbmcgui.ListItem(region, iconImage='DefaultFolder.png')
+        li = xbmcgui.ListItem(region, iconImage='DefaultAudio.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     xbmcplugin.endOfDirectory(addon_handle)
