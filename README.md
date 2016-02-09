@@ -4,7 +4,8 @@ Essentially, this is an Kodi (formerly XBMC) plugin to listen to CBC radio stati
 
 # Installation
 
-You can download the zipped plugin [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/master.zip).
+You can download the most updated zipped plugin [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/master.zip).
+You can download version 1.0 [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/v1.0.zip)
 
 Installation should be like any other Kodi (XBMC) plugin.
 
@@ -13,10 +14,8 @@ Installation should be like any other Kodi (XBMC) plugin.
 Check the [Kodi website](http://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_files) for an illustration.
 
 # Screenshot
-![Screenshot of top level of station lists](http://imgur.com/pfmSiGVl.png "CBC Plugin Screenshot")
+![Screenshot of top level of station lists](http://imgur.com/uJrDridl.png "CBC Plugin Screenshot")
 
 # Testing
 
 Tested as of version 15.2 of Kodi.
-
-The plugin works on this version; some stations have been removed/moved as they are no longer available.
