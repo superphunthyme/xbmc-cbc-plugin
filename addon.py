@@ -9,6 +9,7 @@ import re
 
 from resources.lib import CBCJsonParser
 
+# TODO Add logging info
 # getting addon object
 my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
 # base url and handle of the addon
@@ -43,6 +44,7 @@ def build_url(query):
 mode = args.get('mode',None)
 
 # Top-level menu
+# FIXME, prettify this ugly copy/paste section
 if mode is None:
 
     url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(my_r1_region)[qual])
