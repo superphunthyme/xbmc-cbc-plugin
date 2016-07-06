@@ -28,7 +28,7 @@ Returns:
 def get_R1_streams(region):
     data = json.load(open(DATA_DIR + 'radio1.json', 'r'))
     for station in data:
-        if station['region'].encode('utf-8') == region:
+        if station['region'] == region:
             return (station['high_quality_url'], station['low_quality_url'])
 
 '''
@@ -40,7 +40,7 @@ Returns:
 def get_R2_streams(region):
     data = json.load(open(DATA_DIR + 'radio2.json', 'r'))
     for station in data:
-        if station['region'].encode('utf-8') == region:
+        if station['region'] == region:
             return station['url']
 
 '''
