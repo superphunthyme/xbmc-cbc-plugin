@@ -30,3 +30,6 @@ v0.2
 
 v1.0
 - Can set region and quality via settings. All channels are available
+
+v1.1
+- Added Yellowknife station, localization added for French, French (Canada)
