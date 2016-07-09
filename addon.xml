@@ -10,8 +10,10 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">CBC Online Radio</summary>
     <summary lang="fr">Radio en ligne CBC</summary>
-    <description lang="en">A Plugin to acces CBC online radio and music streaming</description>
-    <description lang="fr">Un Plugin pour acceder a la radio en ligne CBC et ses chaines de musique</description>
+    <summary lang="fr_ca">Radio en ligne CBC</summary>
+    <description lang="en">A Plugin to acces CBC online radio and music streaming (without ICI musique and RCI)</description>
+    <description lang="fr">Une extension pour accéder aux stations radio de Radio-Canada et ses chaînes de musique (sans ICI Musique et RCI)</description>
+    <description lang="fr_ca">Un addiciel pour accéder aux stations radio de Radio-Canada et ses chaînes de musique (sans ICI Musique et RCI)</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>

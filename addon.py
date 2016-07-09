@@ -12,6 +12,9 @@ from resources.lib import CBCJsonParser
 # TODO Add logging info
 # getting addon object
 my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
+# Localization info
+language = my_addon.getLocalizedString
+
 # base url and handle of the addon
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
@@ -29,9 +32,10 @@ my_r1_region = my_addon.getSetting('0')
 my_r2_region = my_addon.getSetting('1')
 
 # Get Quality setting
-my_quality = my_addon.getSetting('2')
+my_quality = my_addon.getSetting('2').decode('utf-8')
 
-if my_quality == 'High (AAC)':
+# 30004 is high quality
+if my_quality == language(30004):
     qual = 0
 else:
     qual = 1
@@ -68,12 +72,12 @@ if mode is None:
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
     url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
-    li = xbmcgui.ListItem('Radio 1 (all)', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio 1 (' + language(30006) + ")", iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
     url = build_url({'mode': 'Radio2', 'foldername': 'Folder Two'})
-    li = xbmcgui.ListItem('Radio 2 (all)', iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem('Radio 2 (' + language(30006) + ")", iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
@@ -110,8 +114,8 @@ elif mode[0] == 'r1_regions':
     aac_stream_url = CBCJsonParser.parse_pls(aac_playlist_url)
     mp3_stream_url = CBCJsonParser.parse_pls(mp3_playlist_url)
 
-    aac_li = xbmcgui.ListItem(region + ' - High Quality (AAC)', iconImage='DefaultAudio.png')
-    mp3_li = xbmcgui.ListItem(region + ' - Low Quality (MP3)', iconImage='DefaultAudio.png')
+    aac_li = xbmcgui.ListItem(region + ' - ' + language(30004), iconImage='DefaultAudio.png')
+    mp3_li = xbmcgui.ListItem(region + ' - ' + language(30005), iconImage='DefaultAudio.png')
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=aac_stream_url, listitem=aac_li)
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=mp3_stream_url, listitem=mp3_li)
     xbmcplugin.endOfDirectory(addon_handle)
