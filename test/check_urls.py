@@ -3,14 +3,13 @@
 Test for connection status of each channel
 
 This is a bit messy, should redo parser
-Also should probably use urllib2 (vs. requests) for consistency with addon, although hopefully shouldn't matter
 TODO Need to test Sonica and Radio3
 
 '''
 
 import sys
 import os.path
-import requests
+import urllib2
 
 CUR_DIR = os.path.dirname(__file__)
 RESOURCES_DIR = os.path.abspath(os.path.join(CUR_DIR, os.path.pardir, 'resources', 'lib'))
@@ -20,6 +19,7 @@ import CBCJsonParser
 
 '''
 Checks that it is possible to connect to the stream specified by region and channel
+TODO Fix unicode situation
 
 Args:
     region: The region served by channel
@@ -27,19 +27,25 @@ Args:
     qual: 0 for High, 1 for Low
 '''
 def checkRegionConnection(region, channel, qual=0):
+    if qual is 0:
+        quality = "HQ"
+    else:
+        quality = "SQ"
     if channel == "radio1":
-        url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(region)[qual])
+        try:
+            url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(region)[qual])
+        except (UnicodeError, UnicodeWarning, TypeError):
+            print("Unicode error for region " + region)
+            return
+
     elif channel == "radio2":
         url = CBCJsonParser.parse_pls(CBCJsonParser.get_R2_streams(region))
 
-    try:
-        r = requests.head(url)
-        if r.status_code < 400:
-            print("Success: Connection to HQ R1 stream for: " + region)
-        else:
-            print("Cannot access stream for: " + region)
-    except (requests.ConnectionError, requests.Timeout):
-        print("Connection error to server")
+    r = urllib2.urlopen(url)
+    if r.getcode() < 400:
+        print("Success: Connection to {} {} stream for: {}".format(quality, channel, region))
+    else:
+        print("Cannot access stream for: " + region)
 
 if __name__ == "__main__":
     # Radio 1 High quality check
