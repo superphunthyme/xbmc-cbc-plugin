@@ -34,5 +34,9 @@ msgid "Low Quality (MP3)"
 msgstr ""
 
 msgctxt "#30006"
-msgid "All stations"
+msgid "Radio 1 (All stations)"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Radio 2 (All stations)"
 msgstr ""

@@ -72,12 +72,12 @@ if mode is None:
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
     url = build_url({'mode': 'Radio1', 'foldername': 'Folder One'})
-    li = xbmcgui.ListItem('Radio 1 (' + language(30006) + ")", iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem(language(30006), iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
     url = build_url({'mode': 'Radio2', 'foldername': 'Folder Two'})
-    li = xbmcgui.ListItem('Radio 2 (' + language(30006) + ")", iconImage='DefaultFolder.png')
+    li = xbmcgui.ListItem(language(30007), iconImage='DefaultFolder.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
