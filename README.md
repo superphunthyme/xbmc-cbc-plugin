@@ -5,7 +5,7 @@ Essentially, this is an Kodi (formerly XBMC) addon to listen to CBC radio statio
 # Installation
 
 You can download the most updated zipped addon [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/master.zip).
-You can download version 1.1 [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/v1.1.zip)
+You can download version 1.2 [here](https://github.com/superphunthyme/xbmc-cbc-plugin/archive/v1.2.zip)
 
 Installation should be like any other Kodi (XBMC) addon.
 
