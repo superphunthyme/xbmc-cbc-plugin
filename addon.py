@@ -11,7 +11,7 @@ from resources.lib import CBCJsonParser
 
 # TODO Add logging info
 # getting addon object
-my_addon = xbmcaddon.Addon('plugin.audio.CBCRadio')
+my_addon = xbmcaddon.Addon('plugin.audio.cbcradio')
 # Localization info
 language = my_addon.getLocalizedString
 
