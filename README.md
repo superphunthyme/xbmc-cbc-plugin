@@ -1,3 +1,5 @@
+**Links are now broken, plugin will no longer work**
+
 xbmc-cbc-plugin
 ===============
 Essentially, this is an Kodi (formerly XBMC) addon to listen to CBC radio stations online
