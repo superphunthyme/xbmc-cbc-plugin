@@ -1,4 +1,4 @@
-**Links are now broken, plugin will no longer work**
+**Links available for R1/R2, CBC music not yet available**
 
 xbmc-cbc-plugin
 ===============
