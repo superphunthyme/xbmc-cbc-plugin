@@ -1,172 +1,172 @@
 [
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_KAM_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_KAM_L.pls", 
+        "high_quality_url": "http://cbc_r1_kam.akacast.akamaistream.net/7/440/451661/v1/rc.akacast.akamaistream.net/cbc_r1_kam",
+        "low_quality_url": "http://cbc_r1_kam.akacast.akamaistream.net/7/440/451661/v1/rc.akacast.akamaistream.net/cbc_r1_kam",
         "region": "Kamloops"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_KEL_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_KEL_L.pls", 
+        "high_quality_url": "http://cbc_r1_kel.akacast.akamaistream.net/7/229/451661/v1/rc.akacast.akamaistream.net/cbc_r1_kel",
+        "low_quality_url": "http://cbc_r1_kel.akacast.akamaistream.net/7/229/451661/v1/rc.akacast.akamaistream.net/cbc_r1_kel",
         "region": "Kelowna"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_PRG_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_PRG_L.pls", 
+        "high_quality_url": "http://cbc_r1_prg.akacast.akamaistream.net/7/966/451661/v1/rc.akacast.akamaistream.net/cbc_r1_prg",
+        "low_quality_url": "http://cbc_r1_prg.akacast.akamaistream.net/7/966/451661/v1/rc.akacast.akamaistream.net/cbc_r1_prg",
         "region": "Prince George"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_VCR_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_VCR_L.pls", 
+        "high_quality_url": "http://cbc_r1_vcr.akacast.akamaistream.net/7/723/451661/v1/rc.akacast.akamaistream.net/cbc_r1_vcr",
+        "low_quality_url": "http://cbc_r1_vcr.akacast.akamaistream.net/7/723/451661/v1/rc.akacast.akamaistream.net/cbc_r1_vcr",
         "region": "Vancouver"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_VIC_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_VIC_L.pls", 
+        "high_quality_url": "http://cbc_r1_vic.akacast.akamaistream.net/7/728/451661/v1/rc.akacast.akamaistream.net/cbc_r1_vic",
+        "low_quality_url": "http://cbc_r1_vic.akacast.akamaistream.net/7/728/451661/v1/rc.akacast.akamaistream.net/cbc_r1_vic",
         "region": "Victoria"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WHS_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WHS_L.pls", 
+        "high_quality_url": "http://cbc_r1_whs.akacast.akamaistream.net/7/319/451661/v1/rc.akacast.akamaistream.net/cbc_r1_whs",
+        "low_quality_url": "http://cbc_r1_whs.akacast.akamaistream.net/7/319/451661/v1/rc.akacast.akamaistream.net/cbc_r1_whs",
         "region": "Whitehorse"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_CGY_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_CGY_L.pls", 
+        "high_quality_url": "http://cbc_r1_cgy.akacast.akamaistream.net/7/298/451661/v1/rc.akacast.akamaistream.net/cbc_r1_cgy",
+        "low_quality_url": "http://cbc_r1_cgy.akacast.akamaistream.net/7/298/451661/v1/rc.akacast.akamaistream.net/cbc_r1_cgy",
         "region": "Calgary"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_EDM_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_EDM_L.pls", 
+        "high_quality_url": "http://cbc_r1_edm.akacast.akamaistream.net/7/904/451661/v1/rc.akacast.akamaistream.net/cbc_r1_edm",
+        "low_quality_url": "http://cbc_r1_edm.akacast.akamaistream.net/7/904/451661/v1/rc.akacast.akamaistream.net/cbc_r1_edm",
         "region": "Edmonton"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_REG_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_REG_L.pls", 
+        "high_quality_url": "http://cbc_r1_reg.akacast.akamaistream.net/7/666/451661/v1/rc.akacast.akamaistream.net/cbc_r1_reg",
+        "low_quality_url": "http://cbc_r1_reg.akacast.akamaistream.net/7/666/451661/v1/rc.akacast.akamaistream.net/cbc_r1_reg",
         "region": "Regina"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SSK_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SSK_L.pls", 
+        "high_quality_url": "http://cbc_r1_ssk.akacast.akamaistream.net/7/842/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ssk",
+        "low_quality_url": "http://cbc_r1_ssk.akacast.akamaistream.net/7/842/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ssk",
         "region": "Saskatoon"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WPG_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WPG_L.pls", 
+        "high_quality_url": "http://cbc_r1_wpg.akacast.akamaistream.net/7/831/451661/v1/rc.akacast.akamaistream.net/cbc_r1_wpg",
+        "low_quality_url": "http://cbc_r1_wpg.akacast.akamaistream.net/7/831/451661/v1/rc.akacast.akamaistream.net/cbc_r1_wpg",
         "region": "Winnipeg"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_IQA_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_IQA_L.pls", 
+        "high_quality_url": "http://cbc_r1_iqa.akacast.akamaistream.net/7/325/451661/v1/rc.akacast.akamaistream.net/cbc_r1_iqa",
+        "low_quality_url": "http://cbc_r1_iqa.akacast.akamaistream.net/7/325/451661/v1/rc.akacast.akamaistream.net/cbc_r1_iqa",
         "region": "Iqaluit"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_EKW_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_EKW_L.pls", 
+        "high_quality_url": "http://cbc_r1_ekw.akacast.akamaistream.net/7/63/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ekw",
+        "low_quality_url": "http://cbc_r1_ekw.akacast.akamaistream.net/7/63/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ekw",
         "region": "Kitchener-Waterloo"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_LDN_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_LDN_L.pls", 
+        "high_quality_url": "http://cbc_r1_ldn.akacast.akamaistream.net/7/104/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ldn",
+        "low_quality_url": "http://cbc_r1_ldn.akacast.akamaistream.net/7/104/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ldn",
         "region": "London"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_OTT_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_OTT_L.pls", 
+        "high_quality_url": "http://cbc_r1_ott.akacast.akamaistream.net/7/613/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ott",
+        "low_quality_url": "http://cbc_r1_ott.akacast.akamaistream.net/7/613/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ott",
         "region": "Ottawa"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SUD_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SUD_L.pls", 
+        "high_quality_url": "http://cbc_r1_sud.akacast.akamaistream.net/7/380/451661/v1/rc.akacast.akamaistream.net/cbc_r1_sud",
+        "low_quality_url": "http://cbc_r1_sud.akacast.akamaistream.net/7/380/451661/v1/rc.akacast.akamaistream.net/cbc_r1_sud",
         "region": "Sudbury"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_TBA_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_TBA_L.pls", 
+        "high_quality_url": "http://cbc_r1_tba.akacast.akamaistream.net/7/245/451661/v1/rc.akacast.akamaistream.net/cbc_r1_tba",
+        "low_quality_url": "http://cbc_r1_tba.akacast.akamaistream.net/7/245/451661/v1/rc.akacast.akamaistream.net/cbc_r1_tba",
         "region": "Thunder Bay"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_TOR_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_TOR_L.pls", 
+        "high_quality_url": "http://cbc_r1_tor.akacast.akamaistream.net/7/632/451661/v1/rc.akacast.akamaistream.net/cbc_r1_tor",
+        "low_quality_url": "http://cbc_r1_tor.akacast.akamaistream.net/7/632/451661/v1/rc.akacast.akamaistream.net/cbc_r1_tor",
         "region": "Toronto"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WDR_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_WDR_L.pls", 
+        "high_quality_url": "http://cbc_r1_wdr.akacast.akamaistream.net/7/813/451661/v1/rc.akacast.akamaistream.net/cbc_r1_wdr",
+        "low_quality_url": "http://cbc_r1_wdr.akacast.akamaistream.net/7/813/451661/v1/rc.akacast.akamaistream.net/cbc_r1_wdr",
         "region": "Windsor"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_MTL_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_MTL_L.pls", 
+        "high_quality_url": "http://cbc_r1_mtl.akacast.akamaistream.net/7/35/451661/v1/rc.akacast.akamaistream.net/cbc_r1_mtl",
+        "low_quality_url": "http://cbc_r1_mtl.akacast.akamaistream.net/7/35/451661/v1/rc.akacast.akamaistream.net/cbc_r1_mtl",
         "region": "Montréal"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_N_MTL_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_N_MTL_L.pls", 
+        "high_quality_url": "http://cbc_r1_n_mtl.akacast.akamaistream.net/7/823/451661/v1/rc.akacast.akamaistream.net/cbc_r1_n_mtl",
+        "low_quality_url": "http://cbc_r1_n_mtl.akacast.akamaistream.net/7/823/451661/v1/rc.akacast.akamaistream.net/cbc_r1_n_mtl",
         "region": "Nord Quebec"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_QQU_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_QQU_L.pls", 
+        "high_quality_url": "http://cbc_r1_qqu.akacast.akamaistream.net/7/29/451661/v1/rc.akacast.akamaistream.net/cbc_r1_qqu",
+        "low_quality_url": "http://cbc_r1_qqu.akacast.akamaistream.net/7/29/451661/v1/rc.akacast.akamaistream.net/cbc_r1_qqu",
         "region": "Québec City"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_FRD_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_FRD_L.pls", 
+        "high_quality_url": "http://cbc_r1_frd.akacast.akamaistream.net/7/553/451661/v1/rc.akacast.akamaistream.net/cbc_r1_frd",
+        "low_quality_url": "http://cbc_r1_frd.akacast.akamaistream.net/7/553/451661/v1/rc.akacast.akamaistream.net/cbc_r1_frd",
         "region": "Fredericton"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_MCT_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_MCT_L.pls", 
+        "high_quality_url": "http://cbc_r1_mct.akacast.akamaistream.net/7/383/451661/v1/rc.akacast.akamaistream.net/cbc_r1_mct",
+        "low_quality_url": "http://cbc_r1_mct.akacast.akamaistream.net/7/383/451661/v1/rc.akacast.akamaistream.net/cbc_r1_mct",
         "region": "Moncton"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SNB_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SNB_L.pls", 
+        "high_quality_url": "http://cbc_r1_snb.akacast.akamaistream.net/7/754/451661/v1/rc.akacast.akamaistream.net/cbc_r1_snb",
+        "low_quality_url": "http://cbc_r1_snb.akacast.akamaistream.net/7/754/451661/v1/rc.akacast.akamaistream.net/cbc_r1_snb",
         "region": "Saint John"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_CHR_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_CHR_L.pls", 
+        "high_quality_url": "http://cbc_r1_chr.akacast.akamaistream.net/7/169/451661/v1/rc.akacast.akamaistream.net/cbc_r1_chr",
+        "low_quality_url": "http://cbc_r1_chr.akacast.akamaistream.net/7/169/451661/v1/rc.akacast.akamaistream.net/cbc_r1_chr",
         "region": "Charlottetown"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SYD_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SYD_L.pls", 
+        "high_quality_url": "http://cbc_r1_syd.akacast.akamaistream.net/7/897/451661/v1/rc.akacast.akamaistream.net/cbc_r1_syd",
+        "low_quality_url": "http://cbc_r1_syd.akacast.akamaistream.net/7/897/451661/v1/rc.akacast.akamaistream.net/cbc_r1_syd",
         "region": "Cape Breton"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_HFX_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_HFX_L.pls", 
+        "high_quality_url": "http://cbc_r1_hfx.akacast.akamaistream.net/7/981/451661/v1/rc.akacast.akamaistream.net/cbc_r1_hfx",
+        "low_quality_url": "http://cbc_r1_hfx.akacast.akamaistream.net/7/981/451661/v1/rc.akacast.akamaistream.net/cbc_r1_hfx",
         "region": "Halifax"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_COR_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_COR_L.pls", 
+        "high_quality_url": "http://cbc_r1_cor.akacast.akamaistream.net/7/550/451661/v1/rc.akacast.akamaistream.net/cbc_r1_cor",
+        "low_quality_url": "http://cbc_r1_cor.akacast.akamaistream.net/7/550/451661/v1/rc.akacast.akamaistream.net/cbc_r1_cor",
         "region": "Corner Brook"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_GFA_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_GFA_L.pls", 
+        "high_quality_url": "http://cbc_r1_gfa.akacast.akamaistream.net/7/492/451661/v1/rc.akacast.akamaistream.net/cbc_r1_gfa",
+        "low_quality_url": "http://cbc_r1_gfa.akacast.akamaistream.net/7/492/451661/v1/rc.akacast.akamaistream.net/cbc_r1_gfa",
         "region": "Grand Falls/Gander"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_GBA_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_GBA_L.pls", 
+        "high_quality_url": "http://cbc_r1_gba.akacast.akamaistream.net/7/274/451661/v1/rc.akacast.akamaistream.net/cbc_r1_gba",
+        "low_quality_url": "http://cbc_r1_gba.akacast.akamaistream.net/7/274/451661/v1/rc.akacast.akamaistream.net/cbc_r1_gba",
         "region": "Labrador"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SNF_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_SNF_L.pls", 
+        "high_quality_url": "http://cbc_r1_snf.akacast.akamaistream.net/7/750/451661/v1/rc.akacast.akamaistream.net/cbc_r1_snf",
+        "low_quality_url": "http://cbc_r1_snf.akacast.akamaistream.net/7/750/451661/v1/rc.akacast.akamaistream.net/cbc_r1_snf",
         "region": "St. John's"
-    }, 
+    },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_INK_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_INK_L.pls", 
+        "high_quality_url": "http://cbc_r1_ink.akacast.akamaistream.net/7/967/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ink",
+        "low_quality_url": "http://cbc_r1_ink.akacast.akamaistream.net/7/967/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ink",
         "region": "Inuvik"
     },
     {
-        "high_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_YKN_H.pls", 
-        "low_quality_url": "http://playerservices.streamtheworld.com/pls/CBC_R1_YKN_L.pls", 
+        "high_quality_url": "http://cbc_r1_ykn.akacast.akamaistream.net/7/369/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ykn",
+        "low_quality_url": "http://cbc_r1_ykn.akacast.akamaistream.net/7/369/451661/v1/rc.akacast.akamaistream.net/cbc_r1_ykn",
         "region": "Yellowknife"
     }
 ]

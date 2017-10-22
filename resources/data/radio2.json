@@ -1,30 +1,30 @@
 [
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_HFX_H.pls", 
+        "url": "http://cbc_r2_hfx.akacast.akamaistream.net/7/917/451661/v1/rc.akacast.akamaistream.net/cbc_r2_hfx",
         "region": "Atlantic"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_TOR_H.pls", 
+        "url": "http://cbc_r2_tor.akacast.akamaistream.net/7/364/451661/v1/rc.akacast.akamaistream.net/cbc_r2_tor",
         "region": "Eastern"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_WPG_H.pls", 
+        "url": "http://cbc_r2_wpg.akacast.akamaistream.net/7/233/451661/v1/rc.akacast.akamaistream.net/cbc_r2_wpg",
         "region": "Central"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_EDM_H.pls", 
+        "url": "http://cbc_r2_edm.akacast.akamaistream.net/7/40/451661/v1/rc.akacast.akamaistream.net/cbc_r2_edm",
         "region": "Mountain"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_VCR_H.pls", 
+        "url": "http://cbc_r2_vcr.akacast.akamaistream.net/7/773/451661/v1/rc.akacast.akamaistream.net/cbc_r2_vcr",
         "region": "Pacific"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_IPT_H.pls", 
+        "url": "http://cbc_r2_ipt.akacast.akamaistream.net/7/669/451661/v1/rc.akacast.akamaistream.net/cbc_r2_ipt",
         "region": "Pacific (International)"
-    }, 
+    },
     {
-        "url": "http://playerservices.streamtheworld.com/pls/CBC_R2_IET_H.pls", 
+        "url": "http://cbc_r2_iet.akacast.akamaistream.net/7/50/451661/v1/rc.akacast.akamaistream.net/cbc_r2_iet",
         "region": "Eastern (International)"
-    } 
+    }
 ]

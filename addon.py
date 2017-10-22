@@ -51,23 +51,13 @@ mode = args.get('mode',None)
 # FIXME, prettify this ugly copy/paste section
 if mode is None:
 
-    url = CBCJsonParser.parse_pls(CBCJsonParser.get_R1_streams(my_r1_region)[qual])
+    url = CBCJsonParser.get_R1_streams(my_r1_region)[qual]
     li = xbmcgui.ListItem('Radio 1 (' + my_r1_region + ')', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
-    url = CBCJsonParser.parse_pls(CBCJsonParser.get_R2_streams(my_r2_region))
+    url = CBCJsonParser.get_R2_streams(my_r2_region)
     li = xbmcgui.ListItem('Radio 2 (' + my_r2_region + ')', iconImage='DefaultAudio.png')
-    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-
-    url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_R3_WEB.pls')
-    li = xbmcgui.ListItem('Radio 3', iconImage='DefaultAudio.png')
-    li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
-    xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
-
-    url = CBCJsonParser.parse_pls('http://playerservices.streamtheworld.com/pls/CBC_SONICA_H.pls')
-    li = xbmcgui.ListItem('Sonica', iconImage='DefaultAudio.png')
     li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
@@ -99,8 +89,7 @@ elif mode[0] == 'Radio2':
     foldername = args['foldername'][0]
     regions = CBCJsonParser.get_regions('radio2')
     for region in regions:
-        playlist_url = CBCJsonParser.get_R2_streams(region)
-        url = CBCJsonParser.parse_pls(playlist_url)
+        url = CBCJsonParser.get_R2_streams(region)
         li = xbmcgui.ListItem(region, iconImage='DefaultAudio.png')
         li.setProperty('fanart_image',my_addon.getAddonInfo('fanart'))
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
@@ -110,9 +99,7 @@ elif mode[0] == 'Radio2':
 elif mode[0] == 'r1_regions':
     region = args['foldername'][0].decode('utf-8')
 
-    aac_playlist_url, mp3_playlist_url = CBCJsonParser.get_R1_streams(region)
-    aac_stream_url = CBCJsonParser.parse_pls(aac_playlist_url)
-    mp3_stream_url = CBCJsonParser.parse_pls(mp3_playlist_url)
+    aac_stream_url, mp3_stream_url = CBCJsonParser.get_R1_streams(region)
 
     aac_li = xbmcgui.ListItem(region + ' - ' + language(30004), iconImage='DefaultAudio.png')
     mp3_li = xbmcgui.ListItem(region + ' - ' + language(30005), iconImage='DefaultAudio.png')
